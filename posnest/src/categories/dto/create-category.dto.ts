@@ -7,6 +7,9 @@ export class CreateCategoryDto {
   name: string;
 
   @IsNotEmpty({ message: 'La descripcion de la categoria no puede ir vacia' })
-  @ApiProperty({ example: 'Categoria para bebidas frias y calientes', description: 'Descripcion de la categoria'})
+  @ApiProperty({
+    example: 'Categoria para bebidas frias y calientes',
+    description: 'Descripcion de la categoria',
+  })
   description: string;
 }
